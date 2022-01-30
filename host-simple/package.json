@@ -1,0 +1,18 @@
+{
+  "name": "host-simple",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --port 9000 --strictPort",
+    "build": "vite build",
+    "serve": "vite preview --port 9000 --strictPort"
+  },
+  "devDependencies": {
+    "vite": "^2.5.1",
+    "vite-plugin-vue2": "^1.9.0"
+  },
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
