@@ -1,11 +1,13 @@
 {
-  "name": "host-simple",
+  "name": "home",
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite --port 9000 --strictPort",
+    "dev": "vite --port 9001 --strictPort",
     "build": "vite build",
-    "serve": "vite preview --port 9000 --strictPort"
+    "serve": "vite preview --port 9001 --strictPort",
+    "test": "echo test $name",
+    "debug": "set DEBUG=vite:deps && vite build"
   },
   "devDependencies": {
     "vite": "^2.5.1",
