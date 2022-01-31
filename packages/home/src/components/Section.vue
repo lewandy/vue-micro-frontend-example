@@ -1,6 +1,6 @@
 <template>
   <section :class="$style.section">
-    <h1 :class="$style.h1">This is a section from /remote-simple.</h1>
+    <h1 :class="$style.h1">This is a section from /Home.</h1>
 
     <slot />
   </section>

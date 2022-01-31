@@ -1,6 +1,6 @@
 <template>
   <button :class="$style.button" v-on:click="count++">
-    <slot>host-simple's Button: {{ count }}</slot>
+    <slot>Button from App: {{ count }}</slot>
   </button>
 </template>
 

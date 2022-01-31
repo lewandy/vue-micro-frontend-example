@@ -17,8 +17,8 @@ export default {
   components: {
     Section,
     Button: () => import('./components/Button.vue'),
-    RemoteButton: () => import('remote-simple/remote-simple-button'),
-    RemoteSection: () => import('remote-simple/remote-simple-section'),
+    RemoteButton: () => import('home/home-button'),
+    RemoteSection: () => import('home/home-section'),
   }
 }
 </script>

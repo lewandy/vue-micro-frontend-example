@@ -7,18 +7,17 @@ export default defineConfig({
   plugins: [
     createVuePlugin(),
     federation({
-      name: "remote-simple",
+      name: "home",
       filename: "remoteEntry.js",
       exposes: {
-        "./remote-simple-button": "./src/components/Button.vue",
-        "./remote-simple-section": "./src/components/Section.vue",
+        "./home-button": "./src/components/Button.vue",
+        "./home-section": "./src/components/Section.vue",
       },
       shared: ["vue"],
     }),
   ],
   server: {
     port: 9001,
-    force: true
   },
   build: {
     target: "es2020",

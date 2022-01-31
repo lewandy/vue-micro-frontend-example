@@ -7,15 +7,15 @@ export default defineConfig({
   plugins: [
     createVuePlugin(),
     federation({
-      name: "remote-simple",
+      name: "app",
       filename: "remoteEntry.js",
       remotes: {
-        "remote-simple": "http://localhost:9001/assets/remoteEntry.js",
+        home: "http://localhost:9001/assets/remoteEntry.js",
       },
       shared: ["vue"],
     }),
   ],
-  server: { port: 9000, force: true },
+  server: { port: 9000 },
   build: {
     target: "es2020",
     minify: false,

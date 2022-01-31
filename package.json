@@ -6,9 +6,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "pnpm run build",
-    "dev": "pnpm run dev",
-    "serve": "pnpm run serve --parallel",
+    "build": "pnpm run build -r --filter ./packages",
+    "dev": "pnpm run dev -r --filter ./packages",
+    "serve": "pnpm run serve -r --parallel --filter ./packages",
     "stop": "kill-port --port 9000,9001"
   },
   "devDependencies": {
