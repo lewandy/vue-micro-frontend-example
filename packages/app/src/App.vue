@@ -10,17 +10,23 @@
 </template>
 
 <script>
-import Section from './components/Section.vue'
+import Section from "./components/Section.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Section,
-    Button: () => import('./components/Button.vue'),
-    RemoteButton: () => import('home/home-button'),
-    RemoteSection: () => import('home/home-section'),
-  }
-}
+    Button: () => import("./components/Button.vue"),
+    RemoteButton: () =>
+      import.meta.env.DEV
+        ? import("../../home/src/components/Button.vue")
+        : import("home/home-button"),
+    RemoteSection: () =>
+      import.meta.env.DEV
+        ? import("../../home/src/components/Section.vue")
+        : import("home/home-section"),
+  },
+};
 </script>
 
 <style>
